@@ -1,7 +1,9 @@
-import unnittest
+import unittest
 from app import sum
-class TestSum(unnittest.TestCase):
+
+class TestSum(unittest.TestCase):
     def test_sum(self):
-        self.assertEpual(sum(1,2), 3)
+        self.assertEqual(sum(1, 4), 5)
+
 if __name__ == '__main__':
-    unnittest.main()
+    unittest.main()
